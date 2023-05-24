@@ -107,10 +107,10 @@ const startApp = async () => {
         createdAt: -1,
       });
       let createdDate = lastDoc?.createdAt?.getTime();
-      let second = lastDoc?.createdAt?.getMilliseconds();
+      let ms = lastDoc?.createdAt?.getMilliseconds();
       let stream;
-      if (createdDate && second) {
-        const ts = new Timestamp({ t: createdDate / 1000, i: second });
+      if (createdDate && ms) {
+        const ts = new Timestamp({ t: createdDate / 1000, i: ms });
         stream = Customer.watch([], { startAtOperationTime: ts });
       } else {
         stream = Customer.watch();
