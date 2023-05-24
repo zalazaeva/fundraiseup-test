@@ -1,0 +1,26 @@
+{
+  "name": "typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.2.1",
+    "prettier": "2.8.8"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^8.0.1",
+    "dayjs": "^1.11.7",
+    "dotenv": "^16.0.3",
+    "moment": "^2.29.4",
+    "mongodb": "^5.5.0",
+    "mongoose": "^7.2.0",
+    "randexp": "^0.5.3",
+    "typescript": "^5.0.4"
+  }
+}
